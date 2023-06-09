@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="26dp"
+    android:background="@color/tw">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit your entry"
+        android:layout_margin="6dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/fo"/>
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fo"
+        android:textColorHint="@color/fo"
+        android:hint="@string/exercise_name"/>
+    <EditText
+        android:id="@+id/edit_reps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fo"
+        android:textColorHint="@color/fo"
+        android:hint="@string/reps_num"/>
+    <EditText
+        android:id="@+id/edit_weigth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fo"
+        android:textColorHint="@color/fo"
+        android:hint="@string/weight"/>
+    <TextView
+        android:id="@+id/edit_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/fo"
+        android:text="@string/date"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/edit_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Save"/>
+        <Button
+            android:id="@+id/edit_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Cancel"/>
+    </RelativeLayout>
+
+</LinearLayout>
