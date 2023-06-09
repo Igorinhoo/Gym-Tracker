@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Gym Tracker</string>
+    <string name="push_btn">Push</string>
+    <string name="pull_btn">Pull</string>
+    <string name="legs_btn">Legs</string>
+    <string name="exercise_name">Nazwa cwiczenia</string>
+    <string name="reps_num">Liczba powtorzen</string>
+    <string name="date">Wprowadz date</string>
+    <string name="add_exe_btn">Dodaj cwiczenie</string>
+    <string name="weight">Podaj obciazenie</string>
+</resources>
+

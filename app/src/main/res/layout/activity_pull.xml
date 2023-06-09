@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F9EBC8"
+    android:padding="16dp"
+    tools:context=".pullActivity">
+
+
+    <EditText
+        android:id="@+id/exe_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/exercise_name"
+        android:textColor="@color/fo"
+        android:textColorHint="@color/fo"
+        tools:ignore="TouchTargetSizeCheck"/>
+
+    <EditText
+        android:id="@+id/reps_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reps_num"
+        android:textColor="@color/fo"
+        android:textColorHint="@color/fo"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/weight"
+        android:textColor="@color/fo"
+        android:textColorHint="@color/fo"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textColor="@color/fo"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_exe_btn"
+            android:textColor="@color/black"
+            android:backgroundTint="#0AA1DD"/>
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Szukaj"
+            android:textColor="@color/black"
+            android:backgroundTint="#0AA1DD"
+            android:layout_marginLeft="5dp"
+            />
+        <EditText
+            android:id="@+id/ser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Szukaj"
+            android:textColor="@color/fo"
+            android:textColorHint="@color/fo"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        tools:listitem="@layout/list_rows" />
+</LinearLayout>
